@@ -5,15 +5,8 @@
   "main": "build/cjs/cjs.js",
   "unpkg": "build/web/react-draggable.min.js",
   "scripts": {
-    "test": "make test",
-    "test-phantom": "make test-phantom",
-    "test-debug": "karma start --browsers=Chrome --single-run=false --auto-watch=true",
-    "test-firefox": "karma start --browsers=Firefox --single-run=false --auto-watch=true",
-    "test-ie": "karma start --browsers=IE --single-run=false --auto-watch=true",
     "dev": "make dev",
-    "build": "make clean build",
-    "lint": "make lint",
-    "flow": "flow"
+    "build": "make clean build"
   },
   "files": [
     "/build",
@@ -84,10 +77,6 @@
   "resolutions": {
     "minimist": "^1.2.5"
   },
-  "precommit": [
-    "lint",
-    "test"
-  ],
   "dependencies": {
     "classnames": "^2.2.5",
     "prop-types": "^15.6.0"
